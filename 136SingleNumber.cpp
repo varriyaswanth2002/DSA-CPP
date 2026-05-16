@@ -16,8 +16,8 @@ void fun2(vector<int>nums){
         counter[nums[i]]++;
     }
     for(int i=0;i<nums.size();i++){
-        if(nums[i]==1){
-            cout<<"Single number is:"<<i;
+        if(counter[nums[i]]==1){
+            cout<<"Single number is:"<<nums[i];
         }
     }
 }
